@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link
@@ -11,12 +11,12 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
-    />
+    >
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
-    <link rel="stylesheet" href="styles/about.css" />
+    >
+    <link rel="stylesheet" href="styles/about.css">
 
     <title>About Us</title>
   </head>
@@ -35,7 +35,7 @@
       <div class="container">
         <section class="about">
           <div class="about-image">
-            <img src="images/logo-light.png" />
+            <img src="images/logo-light.png" alt="">
           </div>
           <div class="about-content">
             <h2>Our history</h2>
@@ -68,7 +68,7 @@
           </div>
           <div class="sub-container">
             <div class="teams">
-              <img src="images/mike.jpg" alt="" />
+              <img src="images/mike.jpg" alt="">
               <div class="name">Michael Scott</div>
               <div class="desig">CEO</div>
               <div class="aboutDesc">
@@ -91,7 +91,7 @@
             </div>
 
             <div class="teams">
-              <img src="images/dwight.jpg" alt="" />
+              <img src="images/dwight.jpg" alt="">
               <div class="name">Dwight Schrute</div>
               <div class="desig">Chief Engineer</div>
               <div class="aboutDesc">
@@ -114,7 +114,7 @@
             </div>
 
             <div class="teams">
-              <img src="images/jimmyjim.png" alt="" />
+              <img src="images/jimmyjim.png" alt="">
               <div class="name">Jim Halpert</div>
               <div class="desig">Customer Service Manager</div>
               <div class="aboutDesc">
@@ -140,19 +140,48 @@
 
         <!-- Contact Us Form -->
         <div class="contact-container">
-          <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-              <div class="contact-left-title">
-                  <h2>Get in touch</h2>
-                  <hr>
-              </div>
-              <input type="hidden" name="access_key" value="b7eb3829-3c99-49c5-bdf4-e8ebfcbd1077">
-              <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-              <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-              <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-              <button type="submit">Submit<i class="uil uil-arrow-circle-right"></i></button>
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-left"
+          >
+            <div class="contact-left-title">
+              <h2>Get in touch</h2>
+              <hr>
+            </div>
+            <input
+              type="hidden"
+              name="access_key"
+              value="b7eb3829-3c99-49c5-bdf4-e8ebfcbd1077"
+            >
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="contact-inputs"
+              required
+              autocomplete="name"
+            >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="contact-inputs"
+              required
+              autocomplete="email"
+            >
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              class="contact-inputs"
+              required
+            ></textarea>
+            <button type="submit">
+              Submit<i class="uil uil-arrow-circle-right"></i>
+            </button>
           </form>
           <div class="contact-right"></div>
-              <img src="/images/contact-us.png" alt="">
+          <img src="/images/contact-us.png" alt="" class="contact-image">
         </div>
         <!-- End Contact Us Form -->
       </div>
@@ -164,7 +193,7 @@
       <p><a href="about.html">About Us</a> | <a href="faq.html">FAQ</a></p>
       <p>&copy; Maxx Energy</p>
       <p>
-        14321 Winter Breeze Dr, Midlothian, VA 23113 <br />
+        14321 Winter Breeze Dr, Midlothian, VA 23113 <br>
         <a
           href="https://maps.google.com/maps?q=14321+Winter+Breeze+Dr,+Midlothian,+VA+23113"
           target="_blank"
@@ -178,7 +207,7 @@
             alt="Instagram"
             width="30"
             height="30"
-          />
+          >
         </a>
         <a href="https://www.x.com" target="_blank" class="icon">
           <img
@@ -186,7 +215,7 @@
             alt="Twitter"
             width="30"
             height="30"
-          />
+          >
         </a>
       </p>
     </footer>

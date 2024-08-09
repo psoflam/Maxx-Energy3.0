@@ -257,4 +257,7 @@ body{
     .contact-right{
         display: none;
     }
+    .contact-image{
+        display: none;
+    }
 }
