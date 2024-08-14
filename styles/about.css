@@ -51,6 +51,7 @@ body{
 .about-image{
    flex:1;
    margin-right: 40px;
+   border-radius: 15px;
    overflow: hidden; 
 }
 .about-image img{
@@ -259,5 +260,83 @@ body{
     }
     .contact-image{
         display: none;
+    }
+}
+
+/* FOOTER */
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.socialIcons a i {
+    font-size: 1.5em;
+    color: #162B46;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    transform: scale(1.2);
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: #162B46;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: #162B46;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
     }
 }
