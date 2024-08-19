@@ -129,10 +129,22 @@
 /* metrics begin */
 
 .circlesicon{
-    color: var(--darkgreen);
+    color: var(--primary);
     background-color: var(--lightgreen);
 }
 
+.metriccontainer{
+    background:  linear-gradient(to top right, #06325A, #269992);
+    border-radius: 20px;
+}
+
+.metrictext{
+    color: var(--light);
+}
+
+.metrictextnumber{
+    color: var(--lightgreen);
+}
 /* metric ends */
 
 /* projects begin */
@@ -255,6 +267,7 @@
     background-color: var(--primary);
     color: var(--light);
     border: none;
+    font-weight: bold;
 }
 
 
