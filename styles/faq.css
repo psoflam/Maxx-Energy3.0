@@ -1,13 +1,153 @@
+
+/* NavBar */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: 0; */
+
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Inter" , sans-serif ;
+    background-color: #e8f0f7;
+    height: 5000px;
+    padding-top: 60px;
+}
+
+.header {
+    background-color: rgb(19, 22, 26);
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+
+
+
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 60px;
+}
+
+.logo{
+    display: flex;
+    /* position:absolute; */
+    height: 100px;
+    left: 0px;
+    width: 120px;
+  
+}
+
+.nav{
+    transition: all 0.3s ease-in-out;
+
+}
+
+.nav__list{
+    display: flex;
+    column-gap: 40px;
+
+}
+
+
+
+
+.nav__item{
+
+}
+
+.nav__link{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    transition: all 0.4s;
+}
+
+.nav__link:hover , .nav__link:focus{
+    color:  rgba(255, 255, 255, 1);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+
+}
+
+.bar{
+    height: 2px;
+    width: 27px;
+    background: #fff;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.nav--open{
+    transform: translate(0) !important;
+}
+
+.hamburger--open .bar:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+
+}
+.hamburger--open .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger--open .bar:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+
+}
+
+@media(max-width: 650px){
+    .nav{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: rgb(19, 22, 26);
+        width: 100%;
+        padding: 10px 0 25px;
+        transform: translateX(-100%);
+    }
+    .nav__list{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .nav__link{
+        font-size: 14px;
+
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
+
+
+/* FAQ */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Quicksand:wght@300..700&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
 }
 body{
     font-family: "Quicksand",sans-serif;
-    background: #1c1c1c;
+    background: #fff;
     color: #fff;
 
 }
@@ -21,30 +161,37 @@ section{
 }
 .title{
     font-size: 3rem;
+   padding-top: 2rem;
     margin: 2rem 0rem;
+    color: #162B46;
+    text-align: center;
 }
 
 .faq{
     max-width: 700px;
     margin-top: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid  #162B46;
     cursor: pointer;
 }
 .question{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color:  #162B46;
+
 }
 
 .question h3{
     font-size: 1.8rem;
+    
 }
 
 .answer{
     max-height: 0;
     overflow: hidden;
     transition: max-height 1.4s ease;
+    color:  #162B46;
 }
 .answer p{
     padding-top: 1rem;
@@ -76,4 +223,115 @@ svg{
 
     }
     }
+
+/* my searchBar */
+    #searchBar {
+        width: 100%;
+        /* max-width: 400px; */
+        max-width: 700px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        outline: none;
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    #searchBar::placeholder {
+        color: #888;
+        font-style: italic;
+    }
+
+    #searchBar:focus {
+        border-color: #007BFF;
+        box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    }
+
+
+
+
+    /* FOOTER */
+ 
+.footerContainer {
+    width: 100%;
+    padding: 30px 20px;
+}
+ 
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+ 
+.socialIcons a {
+    text-decoration: none;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+ 
+.socialIcons a i {
+    font-size: 1.5em;
+    color: #162B46;
+    opacity: 0.9;
+    transition: .5s;
+}
+ 
+.socialIcons a i:hover {
+    transform: scale(1.2);
+    color: var(--lightgreen) !important;
+}
+ 
+.socialIcons a:hover {
+    transform: scale(1.2);
+}
+ 
+.footerNav {
+    margin: 30px 0;
+}
+ 
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+ 
+.footerNav ul li a {
+    color: #162B46;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+ 
+.footerNav ul li a:hover {
+    opacity: 1;
+    color: var(--darkgreen);
+}
+ 
+.footerBottom {
+    text-align: center;
+}
+ 
+.footerBottom p {
+    color: #162B46;
+}
+ 
+.designer {
+    opacity: 0.7;
+    text-transform: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+ 
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
 

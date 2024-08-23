@@ -1,0 +1,348 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFFFFF;
+}
+.heading{
+  width:90%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+.heading h1 {
+  font-size: 50px;
+  color:#162B46;
+  margin-bottom: 25px;
+  position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #C4BBBB;
+}
+.heading p{
+    font-size: 18px;
+    color: #162B46;
+    margin-bottom: 35px;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.about{
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   flex-wrap: wrap;
+   margin-bottom: 70px;
+}
+.about-image{
+   flex:1;
+   margin-right: 40px;
+   border-radius: 15px;
+   overflow: hidden; 
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #8EB6A5;
+}
+
+.about-content p{
+   font-size: 18px;
+   line-height: 1.5;
+   color: #162B46; 
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8EB6A5;
+    color: #162B46;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more:hover{
+    background-color: #C4BBBB;
+}
+@media screen and (max-width: 768px){
+    .heading{
+        padding:0px 20px;
+    }
+    .heading h1{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .heading p {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding:0px;
+    }
+    .about{
+        padding:20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        padding:0px;
+        font-size: 16px;   
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    }
+}
+.teamContainer{
+    text-align: center;
+    background: #FFFFFF;
+    margin-top: 70px;
+}
+.sub-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.teams{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+.teams:hover{
+    background: #dddddd;
+    border-radius: 12px;
+}
+.teams img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.desig{
+    font-style: italic;
+    color:#477b3a;
+}
+.aboutDesc{
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #162B46;
+}
+.social-links{
+  margin: 14px;
+}
+.social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+.social-links a:hover{
+    transform: scale(1.5);
+}
+.social-links a i{
+    color: #162B46;
+}
+@media screen and (max-width: 768px) {
+    .teams {
+        max-width: 100%;
+    }
+}
+.contact-container{
+    height: 100hv;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #162B46;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #477b3a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+   width: 400px;
+   height: 50px;
+   border: none;
+   outline: none;
+   padding-left: 25px;
+   font-weight: 500;
+   color: #162B46;
+   border: 2px solid #8EB6A5;
+   border-radius: 50px;
+}
+.contact-left textarea{
+  height: 120px;
+  padding-top: 15px;
+  border-radius: 20px; 
+}
+.contact-inputs:focus{
+    border: 2px solid #477b3a;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #162B46;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: #8EB6A5;
+    cursor: pointer;
+}
+.contact-left button:hover{
+    background-color: #C4BBBB;
+}
+.contact-right img{
+    width: 500px;
+}
+@media (max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+    .contact-image{
+        display: none;
+    }
+}
+
+/* FOOTER */
+ 
+.footerContainer {
+    width: 100%;
+    padding: 30px 20px;
+}
+ 
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+ 
+.socialIcons a {
+    text-decoration: none;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+ 
+.socialIcons a i {
+    font-size: 1.5em;
+    color: #162B46;
+    opacity: 0.9;
+    transition: .5s;
+}
+ 
+.socialIcons a i:hover {
+    transform: scale(1.2);
+    color: var(--lightgreen) !important;
+}
+ 
+.socialIcons a:hover {
+    transform: scale(1.2);
+}
+ 
+.footerNav {
+    margin: 30px 0;
+}
+ 
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+ 
+.footerNav ul li a {
+    color: #162B46;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+ 
+.footerNav ul li a:hover {
+    opacity: 1;
+    color: var(--darkgreen);
+}
+ 
+.footerBottom {
+    text-align: center;
+}
+ 
+.footerBottom p {
+    color: #162B46;
+}
+ 
+.designer {
+    opacity: 0.7;
+    text-transform: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+ 
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
