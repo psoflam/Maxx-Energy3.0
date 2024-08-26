@@ -14,13 +14,21 @@ loginForm.onsubmit = function (event) {
         username: loginForm.username.value,
         password: loginForm.password.value,
     }
-
-    // Disables the button after the form has been submitted already:
-    loginForm.loginButton.disabled = true;
-
-    // Time to actually process the login using the function from auth.js!
-    login(loginData);
+        if (loginData.username && loginData.password) {
+            loginForm.loginButton.disabled = true;
+            login(loginData);
+        } else {
+            alert("Please fill in both fields.");
+        
+    }
 };
+
+//     // Disables the button after the form has been submitted already:
+//     loginForm.loginButton.disabled = true;
+
+//     // Time to actually process the login using the function from auth.js!
+//     login(loginData);
+// };
 
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
@@ -58,6 +66,8 @@ function scrollToSignup() {
     const signupSection = document.getElementById('signup-section');
     signupSection.scrollIntoView({ behavior: 'smooth' });
 }
+
+//end of signup/login
 
 document.addEventListener("DOMContentLoaded", () => {
     const counters = document.querySelectorAll('.metrictextnumber');
