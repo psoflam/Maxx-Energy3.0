@@ -29,53 +29,82 @@ body {
     position: fixed;
     width: 100%;
     top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out children (logo, nav, icon) */
+    padding: 0 30px;
+    min-height: 60px;
 }
-
+.logo1{
+margin-right: 15px;
+margin-bottom:30px;
+}
 
 
 .header__content{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    width:100%;
+    /* justify-content: space-between;
     padding: 0 30px;
-    min-height: 60px;
+    min-height: 60px; */
 }
 
 .logo{
-    display: flex;
+    /* display: flex; */
     /* position:absolute; */
-    height: 100px;
-    left: 0px;
-    width: 120px;
+    height: 150px;
+    /* left: 0px; */
+    width: 150px;
   
 }
 
 .nav{
+    flex: 1; /* Take up available space between logo and icon */
+    display: flex;
+    justify-content: center; /* Center navigation links */
     transition: all 0.3s ease-in-out;
+   
 
 }
 
 .nav__list{
     display: flex;
     column-gap: 40px;
+  
 
 }
 
+.icon {
 
+    color: #162B46;
+    display: flex !important;
+    /* right: 0px !important; */
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom:30px;
+}
 
 
 .nav__item{
-
+display: flex;
+justify-content: center;
 }
 
 .nav__link{
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(12, 12, 12, 0.75);
     font-size: 15px;
     transition: all 0.4s;
+    /* left: 0px; */
+   
+    
 }
 
 .nav__link:hover , .nav__link:focus{
-    color:  rgba(255, 255, 255, 1);
+    /* color:  rgba(255, 255, 255, 1); */
+    /* display: flex; */
+    color: #162B46;
+   
 }
 
 .hamburger{
