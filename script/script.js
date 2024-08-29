@@ -141,3 +141,49 @@ navEl.addEventListener("click", ()=>{
     hamburgerEl.classList.remove("hamburger--open");
 })
 
+
+//email section begins 
+document.addEventListener('DOMContentLoaded', function() {
+document.querySelector('.emailform').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
+    
+    let firstName = document.querySelector('input[placeholder="First Name"]').value;
+    let lastName = document.querySelector('input[placeholder="Last Name"]').value;
+    let email = document.querySelector('input[placeholder="Email"]').value;
+    let service = document.querySelector('select').value;
+    let specialNote = document.querySelector('textarea').value;
+
+    // Simple validation
+    if (!firstName || !lastName || !email || service === 'Select a Service') {
+        alert('Please fill in all required fields.');
+        return;
+    }
+
+    if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    // You can now send the form data to your backend or email service
+    sendEmail(firstName, lastName, email, service, specialNote);
+});
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+function sendEmail(firstName, lastName, email, service, specialNote) {
+    emailjs.send("service_fdfrczd", "template_wkaw9qq", {
+        from_name: `${firstName} ${lastName}`,
+        from_email: email,
+        service: service,
+        message: specialNote
+    })
+    .then(function(response) {
+        alert('Your message has been sent successfully!');
+    }, function(error) {
+        alert('There was an error sending your message.');
+    });
+}
+});

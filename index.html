@@ -11,10 +11,18 @@
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
+    
 
     <title>maxx energy</title>
 
     <script src="/script/auth.js"></script>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("Bif39PdUgWw5iE1wu");
+  })();
+</script>
   </head>
   <body>
     <!-- navigation begins -->
@@ -424,30 +432,30 @@
                     <h1 class="mb-4 contactustext">Send Us an Email</h1>
                     <hr class=" contactusline w-25" style="height: 3px;">  
                     <h3 class="mb-4 pb-2 textemail">Get in touch with us via email.</h3>
-                    <form class="emailform">
+                    <form class="emailform" id="emailForm">
                         <div class="row g-3 ">
                             <div class="col-12 col-sm-6 ">
-                                <input type="text" class="form-control border-2 " placeholder="First Name" style="height: 55px; border-radius: 8px;">
+                                <input type="text" class="form-control border-2 " name="first_name" placeholder="First Name" style="height: 55px; border-radius: 8px;">
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-2" placeholder="Last Name" style="height: 55px; border-radius: 8px;">
+                                <input type="text" class="form-control border-2"  name="last_name" placeholder="Last Name" style="height: 55px; border-radius: 8px;">
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control border-2" placeholder="Email" style="height: 55px; border-radius: 8px;">
+                                <input type="email" class="form-control border-2" name="from_email" placeholder="Email" style="height: 55px; border-radius: 8px;">
                             </div>
                             <div class="col-12 col-sm-6">
-                                <select class="form-select border-2" style="height: 55px; border-radius: 8px;">
+                                <select class="form-select border-2"  style="height: 55px; border-radius: 8px;">
                                     <option selected>Select a Service</option>
                                     <option value="1">Solar Panels</option>
                                     <option value="2">Wind Turbine Installation</option>
                                     <option value="3">Renewable Energy Financing</option>
-                                    <option value="3">Hydropower Systems</option>
-                                    <option value="3">Community Solar Programs</option>
-                                    <option value="3">Energy Storago Solution</option>
+                                    <option value="4">Hydropower Systems</option>
+                                    <option value="5">Community Solar Programs</option>
+                                    <option value="6">Energy Storago Solution</option>
                                 </select>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control border-2" placeholder="Special Note" style="border-radius: 8px;"></textarea>
+                                <textarea class="form-control border-2" name="message" placeholder="Special Note" style="border-radius: 8px;"></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="contactusbutton py-3" type="submit" style="border-radius: 15px; width: 300px;">Submit</button>
