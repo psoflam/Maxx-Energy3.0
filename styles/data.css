@@ -3,6 +3,200 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* my navBar Ali */
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* body {
+    font-family: "Inter" , sans-serif ;
+    background-color: #e8f0f7;
+    height: 5000px;
+    padding-top: 60px;
+} */
+
+.header {
+    background-color: rgb(19, 22, 26);
+    position: fixed;
+    width: 100%;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out children (logo, nav, icon) */
+    padding: 0 30px;
+    min-height: 60px;
+}
+.logo1{
+margin-right: 15px;
+margin-bottom:30px;
+}
+
+
+.header__content{
+    display: flex;
+    align-items: center;
+    width:100%;
+    /* justify-content: space-between;
+    padding: 0 30px;
+    min-height: 60px; */
+}
+
+.logo{
+    /* display: flex; */
+    /* position:absolute; */
+    height: 150px;
+    /* left: 0px; */
+    width: 150px;
+  
+}
+
+.nav{
+    flex: 1; /* Take up available space between logo and icon */
+    display: flex;
+    justify-content: center; /* Center navigation links */
+    transition: all 0.3s ease-in-out;
+   
+
+}
+
+.nav__list{
+    display: flex;
+    column-gap: 40px;
+  
+
+}
+
+.icon {
+
+    color: #162B46;
+    display: flex !important;
+    /* right: 0px !important; */
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom:30px;
+}
+
+
+.nav__item{
+display: flex;
+justify-content: left;
+}
+
+.nav__link{
+    color: rgba(12, 12, 12, 0.75);
+    font-size: 15px;
+    transition: all 0.4s;
+    left: 0px;
+   
+    
+}
+#logout1{
+    margin-right: 0px;
+}
+
+/* logout */
+.logoutup {
+    display: flex;
+    align-items: center; /* Vertically align items within this container */
+    margin-bottom: 30px; /* Match the bottom margin of the logo */
+    margin-left: auto; 
+}
+
+/* Optional: Style the link to look like a button */
+#logout1 {
+    text-decoration: none;
+    color: black; /* Adjust color as needed */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+    display: flex;
+    align-items: center;
+}
+
+#logout1 i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+
+.nav__link:hover , .nav__link:focus{
+    /* color:  rgba(255, 255, 255, 1); */
+    /* display: flex; */
+    color: #162B46;
+   
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+
+}
+
+.bar{
+    height: 2px;
+    width: 27px;
+    background: #fff;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.nav--open{
+    transform: translate(0) !important;
+}
+
+.hamburger--open .bar:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+
+}
+.hamburger--open .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger--open .bar:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+
+}
+
+
+#logout{
+    background-color: rgba(0, 255, 195, 0.593);
+    
+    border-radius: 5px;
+    }
+
+/* @media(max-width: 650px){
+    .nav{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: rgb(19, 22, 26);
+        width: 100%;
+        padding: 10px 0 25px;
+        transform: translateX(-100%);
+    }
+    .nav__list{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .nav__link{
+        font-size: 14px;
+
+    }
+
+    .hamburger{
+        display: block;
+    }
+} */
+/* my part done  */
 
 body {
     background-color: #FFFFFF;
@@ -10,7 +204,7 @@ body {
     z-index: 0;
 }
 
-.hero {
+.header {
     min-height: 100vh;
     background-image: url(../images/solar-panels.jpg);
     background-repeat: no-repeat;
@@ -23,7 +217,7 @@ body {
     overflow: hidden;
 }
 
-.hero::after {
+.header::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -192,6 +386,31 @@ body::before {
 }
 
 @media screen and (max-width: 768px) {
+    /* my media */
+    .nav{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: rgb(19, 22, 26);
+        width: 100%;
+        padding: 10px 0 25px;
+        transform: translateX(-100%);
+    }
+    .nav__list{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .nav__link{
+        font-size: 14px;
+
+    }
+
+    .hamburger{
+        display: block;
+    }
+    /* my media done */
     .heading {
         padding: 0px 20px;
     }
