@@ -62,6 +62,8 @@ signupForm.onsubmit = function (event) {
     });
 };
 
+//signup ends
+
 function scrollToSignup() {
     const signupSection = document.getElementById('signup-section');
     signupSection.scrollIntoView({ behavior: 'smooth' });
