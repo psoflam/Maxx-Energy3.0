@@ -69,6 +69,8 @@ function scrollToSignup() {
     signupSection.scrollIntoView({ behavior: 'smooth' });
 }
 
+//end of signup/login
+
 document.addEventListener("DOMContentLoaded", () => {
     const counters = document.querySelectorAll('.metrictextnumber');
 

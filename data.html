@@ -16,25 +16,83 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles/data.css" />
+    <!-- <link rel="stylesheet" href="styles/faq.css"> -->
+
+     <!-- <script src="/script/auth.js"></script>
+    <script>
+        if (isLoggedIn() === true) window.location.replace("/");
+    </script> -->
 
     <title>Maxx Data</title>
   </head>
   <body>
     <!-- navigation begins -->
-    <nav>
-      <!-- Navigation content -->
-    </nav>
+    <!-- <nav>
+     
+    </nav> -->
     <!-- navigation ends -->
 
     <!-- hero Section Begins -->
-    <header class="hero">
+    <!-- <header class="header bg-transparent">
+      <div class="header__content">
+        <div class="logo1">
+         <img src="images/logo3.png" alt="logo" class="logo">
+        </div>
+          <nav class="nav">
+            
+              <ul class="nav__list">
+                  <li class="nav__item">
+                      <a href="index.html" class="nav__link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="about.html" class="nav__link">About Us</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="#" class="nav__link">Contact Us</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="faq.html" class="nav__link">FAQ</a>
+                  </li>
+                
+              </ul>
+          </nav>
+          <a href="login.html" class=" icon justify-content-end"><i class="fa-solid fa-user" ></i></a>
+         
+          <div class="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <div class="content">
+            <h1>Maxx Energy Stats</h1>
+            <p>Out with the old & in with the new...</p>
+            <a href="#falling-cost" class="btn">Read More</a>
+          </div>
+         
+      
+      </div>
+    
+  </header> -->
+
+  <div class="logo1">
+    <img src="images/logo3.png" alt="logo" class="logo">
+   </div>
+   <div class="logoutup">
+   
+<a href="#" onclick="logout(); return false;" id="logout1">
+  <i class="fa-solid fa-right-from-bracket"></i> Logout
+</a>
+   </div>
+  
+    <!-- <header class="hero">
       <div class="content">
         <h1>Maxx Energy Stats</h1>
         <p>Out with the old & in with the new...</p>
         <a href="#falling-cost" class="btn">Read More</a>
       </div>
-    </header>
+    </header> -->
     <!-- hero Section Ends -->
 
     <main>
@@ -109,6 +167,9 @@
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="data.html">Stats</a></li>
             <li><a href="log.html">Login</a></li>
+            <li class="nav__item">
+              <button onclick="logout ()" id="logout"><i class="fa-solid fa-right-from-bracket"></i> <a href="#" class="nav__link" >Logout</a></button> 
+            </li>
           </ul>
         </nav>
       </div>
@@ -125,6 +186,7 @@
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
       crossorigin="anonymous"
     ></script>
+    <script src="script/data.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
