@@ -16,8 +16,9 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/styles/data.css" />
+    <link rel="stylesheet" href="./styles/data.css" />
     <!-- <link rel="stylesheet" href="styles/faq.css"> -->
 
      <!-- <script src="/script/auth.js"></script>
@@ -28,125 +29,112 @@
     <title>Maxx Data</title>
   </head>
   <body>
-    <!-- navigation begins -->
-    <!-- <nav>
-     
-    </nav> -->
-    <!-- navigation ends -->
-
-    <!-- hero Section Begins -->
-    <!-- <header class="header bg-transparent">
-      <div class="header__content">
-        <div class="logo1">
-         <img src="images/logo3.png" alt="logo" class="logo">
-        </div>
-          <nav class="nav">
-            
-              <ul class="nav__list">
-                  <li class="nav__item">
-                      <a href="index.html" class="nav__link">Home</a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="about.html" class="nav__link">About Us</a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="#" class="nav__link">Contact Us</a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="faq.html" class="nav__link">FAQ</a>
-                  </li>
-                
-              </ul>
-          </nav>
-          <a href="login.html" class=" icon justify-content-end"><i class="fa-solid fa-user" ></i></a>
-         
-          <div class="hamburger">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+      <div class="container">
+        <a class="navbar-brand fs-4" href="index.html"><img src="/images/logo-light.png" style="width: 230px;"> </a>
+        <!-- Toggle Button -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Side bar -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!-- Sidebar Header -->
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" href="index.html">Maxx Potential</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="content">
-            <h1>Maxx Energy Stats</h1>
-            <p>Out with the old & in with the new...</p>
-            <a href="#falling-cost" class="btn">Read More</a>
+          <div class="offcanvas-body ">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">My Bill</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link" href="">Usage</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link" href="">Outage</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link" href="">Alerts</a>
+              </li>
+             </ul>
+             
           </div>
-         
-      
       </div>
+      <a href="" class="btn btn-brand ms-lg-3 justify-content-end d-none d-lg-block logoutbutton">Log Out</a>
+      </div>
+    </nav>
     
-  </header> -->
+  <!-- end of navbar -->
 
-  <div class="logo1">
-    <img src="images/logo3.png" alt="logo" class="logo">
-   </div>
-   <div class="logoutup">
-   
-<a href="#" onclick="logout(); return false;" id="logout1">
-  <i class="fa-solid fa-right-from-bracket"></i> Logout
-</a>
-   </div>
-  
-    <!-- <header class="hero">
-      <div class="content">
-        <h1>Maxx Energy Stats</h1>
-        <p>Out with the old & in with the new...</p>
-        <a href="#falling-cost" class="btn">Read More</a>
+  <!-- hero section begins -->
+  <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-uppercase fw-semibold display-1 text-white"> Welcome, Zoey G </h1>
+          <h5 class="text-uppercase text-white display-7 mt-5 mb-4"> Account Number: 54942194</h5>
+          <h5 class="text-uppercase text-white display-7 mt-5 mb-4 payment"> $98.50</h5>
+          <div>
+            <a href="" class="btn btn-light me-2 mt-4 heroSectionButtons">Make a Payment</a>
+          </div>
+        </div>
       </div>
-    </header> -->
-    <!-- hero Section Ends -->
+    </div>  
+  </div>
+  </section>
 
-    <main>
-      <section>
-        <header class="heading">
-          <h1>Maxx Data</h1>
-        </header>
-        <article class="cost-container">
-          <section id="falling-cost" class="cost">
-            <figure class="cost-image">
-              <img src="/images/energy-cost.png" alt="Falling Cost of Renewable Energy" />
-            </figure>
-            <div class="cost-content">
-              <h2>Falling Cost of Renewable Energy</h2>
-              <p>
-                According to the International Renewable Energy Agency (IRENA),
-                the cost of solar photovoltaic (PV) modules has declined by 90%
-                since 2010, making solar energy more affordable than ever.
-              </p>
-              <p>
-                Wind power costs have also decreased significantly. Onshore wind
-                costs have fallen by around 60% since 2010, further enhancing the
-                economic viability of renewable energy sources.
-              </p>
-            </div>
-          </section>
-        </article>
-      </section>
-
-      <section>
-        <article class="cost-container">
-          <section class="cost reverse-layout">
-            <figure class="cost-image">
-              <img src="/images/global-effect.png" alt="Global Effects of Fossil Fuels" />
-            </figure>
-            <div class="cost-content">
-              <h2>Global Effects of Fossil Fuels</h2>
-              <p>
-                Fossil fuels contribute to air and water pollution, leading to health
-                problems and environmental degradation. According to the Environmental
-                Protection Agency (EPA), burning fossil fuels for electricity is the
-                largest single source of CO2 emissions in the United States.
-              </p>
-              <p>
-                The shift towards clean energy not only mitigates these environmental
-                impacts but also provides sustainable solutions for our future energy
-                needs.
-              </p>
-            </div>
-          </section>
-        </article>
-      </section>
-    </main>
-
+  <section class="sidebarpage">
+    <div class="sidebar">
+      <div class="thelogo">
+        <ul class="maindash">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-table-columns"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-money-bills"></i>
+              <span>My Bill</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Usage</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-folder"></i>
+              <span>My Plan</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-plug-circle-xmark"></i>
+              <span>Outage</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>Alerts</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+    
     <!-- footer begins -->
     <footer>
       <div class="footerContainer">
