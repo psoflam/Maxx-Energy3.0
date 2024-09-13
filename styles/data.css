@@ -98,8 +98,42 @@
     background: rgba(113, 99, 186, 255);
 }
 
+.thelogo{
+   height: 80px;
+   padding: 16px; 
+}
 
+.maindash{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
 
+.maindash li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.maindash li:hover, .active{
+    background: var(--light);
+}
+
+.maindash a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 2.0rem;
+}
+
+.maindash a span{
+    overflow: hidden;
+    
+}
 /* FOOTER */
  
 .footerContainer {
