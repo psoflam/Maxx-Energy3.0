@@ -95,12 +95,12 @@
     color: var(--darkgreen);
     overflow: hidden;
     transition: all 0.5s linear;
-    background: rgba(113, 99, 186, 255);
+    background: var(--primary);
 }
 
 .sidebar:hover{
-    width: 240px;
-    transition: .5s;
+    width: 270px;
+    
 }
 .thelogo{
    height: 80px;
@@ -146,7 +146,7 @@
 /* main body section */
 .main--content {
     position: relative;
-    background: pink;
+    background: white;
     width: 100%;
     padding:1rem;
 }
@@ -170,7 +170,7 @@
 }
 
 .header--title{
-    color: blue;
+    color: var(--primary);
 }
 
 .user--info{
@@ -182,7 +182,7 @@
 .search--box{
     background: white;
     border-radius: 15px;
-    color: var(--darkgreen);
+    color: var(--primary);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -206,7 +206,7 @@
 
 /* card container begins */
 .card--container{
-    background: var(--darkgreen);
+    background: var(--primary);
     padding: 2rem;
     border-radius: 10px;
 }
@@ -220,7 +220,7 @@
 .main--title{
     color: var(--lightgreen);
     padding-bottom: 10px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .payment--card{
@@ -252,7 +252,7 @@ transition: all .5s ease-in-out;
 }
 
 .title{
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 200;
 }
 
@@ -278,6 +278,22 @@ font-family: 600;
     letter-spacing: 2px;
 }
 
+.card-detail-button{
+    font-size: 18px;
+    color: var(--primary);
+    letter-spacing: 2px;
+    border-radius: 15px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    height: 5rem;
+    transition: all .5s ease-in;
+}
+
+.card-detail-button:hover{
+    color: var(--primary);
+    background: var(--lightgreen);
+}
 
 /* table begins */
 .tabular--wrapper{
@@ -297,7 +313,7 @@ table{
 }
 
 thead{
-    background-color: white;
+    background-color: var(--light);
     color: var(--primary);
 }
 
@@ -307,7 +323,7 @@ th{
 }
 
 tbody{
-    background: purple;
+    background: var(--lightgreen);
 }
 
 td{
@@ -321,19 +337,31 @@ tr:nth-child(even){
 }
 
 tfoot{
-background: var(--text);
+background: var(--primary);
 font-weight: bold;
-color: white;
 }
+
 
 tfoot td{
     padding: 15px;
 }
 
 .table-container button{
-    color: green;
-    background: blue;
+    color: var(--primary);
+    background: var(--primary);
+    color: var(--light);
     cursor: pointer;
+    width: 60px;
+    border-radius: 5px;
+    border-color: var(--primary);
+    border-width: 2px;
+    border: none;
+}
+
+.table-container button:hover{
+    color: var(--lightgreen);
+    background: var(--primary);
+    font-weight: bold;
 }
 /* FOOTER */
  
