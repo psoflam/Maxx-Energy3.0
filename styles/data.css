@@ -96,6 +96,8 @@
     overflow: hidden;
     transition: all 0.5s linear;
     background: var(--primary);
+    border-radius: 15px;
+    margin: 1rem;
 }
 
 .sidebar:hover{
@@ -273,13 +275,13 @@ font-family: 600;
 }
 
 .card-detail{
-    font-size: 18px;
+    font-size: 15px;
     color: var(--primary);
     letter-spacing: 2px;
 }
 
 .card-detail-button{
-    font-size: 18px;
+    font-size: 15px;
     color: var(--primary);
     letter-spacing: 2px;
     border-radius: 15px;
@@ -351,7 +353,7 @@ tfoot td{
     background: var(--primary);
     color: var(--light);
     cursor: pointer;
-    width: 60px;
+    width: 120px;
     border-radius: 5px;
     border-color: var(--primary);
     border-width: 2px;
