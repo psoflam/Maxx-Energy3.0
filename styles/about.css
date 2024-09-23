@@ -104,6 +104,10 @@ header {
     margin-bottom:30px;
 }
 
+.icon:hover{
+    color: var(--darkgreen);
+}
+
 
 .nav__item{
 display: flex;
