@@ -67,7 +67,7 @@
              
           </div>
       </div>
-      <a href="" class="btn btn-brand ms-lg-3 justify-content-end d-none d-lg-block logoutbutton">Log Out</a>
+      <a class="btn btn-brand ms-lg-3 justify-content-end d-none d-lg-block logoutbutton" onclick="logout()">Log Out</a>
       </div>
     </nav>
     
@@ -94,8 +94,8 @@
     <div class="sidebar">
       <div class="thelogo">
         <ul class="maindash">
-          <li>
-            <a href="#">
+          <li class="active">
+            <a href="#" >
               <i class="fa-solid fa-table-columns"></i>
               <span>Dashboard</span>
             </a>
@@ -130,10 +130,240 @@
               <span>Alerts</span>
             </a>
           </li>
+          <li class="logoutbuttons" onclick="logout()">
+            <a href="#">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span>Logout</span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
+    
+    <div class="main--content">
+      <div class="header--wrapper">
+        <div class="header--title">
+        <h2>Dashboard</h2>
+        </div>
+        <div class="user--info">
+          <div class="search--box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+        <img src="./images/mike.jpg">
+        </div>
+      </div>
+
+      <div class="card--container">
+        <h3 class="main--title">Todays Data</h3>
+        <div class="card--wrapper">
+          <div class="payment--card">
+            <div class="card--header">
+              <div class="amount">
+                <span class="title">
+                  My Bill
+              </span>
+              <span class="amount-value">
+                $98.50
+              </span>
+              </div>
+              <i class="fa-solid fa-dollar-sign dollaricon"></i>
+            </div>
+            <button class="card-detail-button">Make a Payment</button>
+          </div>
+          <div class="payment--card">
+            <div class="card--header">
+              <div class="amount">
+                <span class="title">
+                  Usage
+              </span>
+              <span class="amount-value">
+                Energy Used: 
+              </span>
+              </div>
+              <i class="fa-solid fa-lightbulb dollaricon"></i>
+            </div>
+            <span class="card-detail">426.92 kWh</span>
+          </div>
+          <div class="payment--card">
+            <div class="card--header">
+              <div class="amount">
+                <span class="title">
+                  My Plan
+              </span>
+              <span class="amount-value">
+                Current Plan: 
+              </span>
+              </div>
+              <i class="fa-solid fa-folder dollaricon"></i>
+            </div>
+            <span class="card-detail">Time-of-Use 4pm-7pm Weekdays</span>
+          </div>
+          <div class="payment--card">
+            <div class="card--header">
+              <div class="amount">
+                <span class="title">
+                  Outage
+              </span>
+              <span class="amount-value">
+                Last Outage:
+              </span>
+              </div>
+              <i class="fa-solid fa-plug-circle-xmark dollaricon "></i>
+            </div>
+            <span class="card-detail">114 days ago</span>
+          </div>
+          <div class="payment--card">
+            <div class="card--header">
+              <div class="amount">
+                <span class="title">
+                  Alerts
+              </span>
+              <span class="amount-value">
+                Weekly Alerts
+              </span>
+              </div>
+              <i class="fa-solid fa-triangle-exclamation dollaricon"></i>
+            </div>
+            <span class="card-detail">None</span>
+          </div>
+        </div>
+      </div>
+      <div class="tabular--wrapper">
+        <h3 class="main--title">
+          Bill Overview
+        </h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                  <th>Account Number</th>
+                  <th>Service Address</th>
+                  <th>Service Plan</th>
+                  <th>Bill Start Date</th>
+                  <th>Bill End Date</th>
+                  <th>Total KW</th>
+                  <th>Bill Amount</th>
+                  <th>Download Bill</th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td>2828564726</td>
+                  <td>1210 E Joans rd, Tucson, AZ, 85122</td>
+                  <td>Time-of-Use 4pm-7pm Weekdays</td>
+                  <td>5/16/2023</td>
+                  <td>5/23/2023</td>
+                  <td>216</td>
+                  <td>492.99</td>
+                  <td><button>Download Bill</button></td>
+                </tr>
+                <tr>
+                  <td>2828564726</td>
+                  <td>1210 E Joans rd, Tucson, AZ, 85122</td>
+                  <td>Time-of-Use 4pm-7pm Weekdays</td>
+                  <td>4/16/2023</td>
+                  <td>4/23/2023</td>
+                  <td>286</td>
+                  <td>452.99</td>
+                  <td><button>Download Bill</button></td>
+                </tr>
+                <tr>
+                  <td>2828564726</td>
+                  <td>1210 E Joans rd, Tucson, AZ, 85122</td>
+                  <td>Time-of-Use 4pm-7pm Weekdays</td>
+                  <td>3/16/2023</td>
+                  <td>3/23/2023</td>
+                  <td>416</td>
+                  <td>542.99</td>
+                  <td><button>Download Bill</button></td>
+                </tr>
+                <tr>
+                  <td>2828564726</td>
+                  <td>1210 E Joans rd, Tucson, AZ, 85122</td>
+                  <td>Time-of-Use 4pm-7pm Weekdays</td>
+                  <td>2/16/2023</td>
+                  <td>2/23/2023</td>
+                  <td>216</td>
+                  <td>242.99</td>
+                  <td><button>Download Bill</button></td>
+                </tr>
+                <tr>
+                  <td>2828564726</td>
+                  <td>1210 E Joans rd, Tucson, AZ, 85122</td>
+                  <td>Time-of-Use 4pm-7pm Weekdays</td>
+                  <td>1/16/2023</td>
+                  <td>1/23/2023</td>
+                  <td>236</td>
+                  <td>342.99</td>
+                  <td><button>Download Bill</button></td>
+                </tr>
+                <tr>
+                  <td>2828564726</td>
+                  <td>1210 E Joans rd, Tucson, AZ, 85122</td>
+                  <td>Time-of-Use 4pm-7pm Weekdays</td>
+                  <td>12/16/2022</td>
+                  <td>12/23/2022</td>
+                  <td>219</td>
+                  <td>427.99</td>
+                  <td><button>Download Bill</button></td>
+                </tr>
+                <tr>
+                  <td>2828564726</td>
+                  <td>1210 E Joans rd, Tucson, AZ, 85122</td>
+                  <td>Time-of-Use 4pm-7pm Weekdays</td>
+                  <td>11/16/2022</td>
+                  <td>11/23/2022</td>
+                  <td>226</td>
+                  <td>442.99</td>
+                  <td><button>Download Bill</button></td>
+                </tr>
+                <tr>
+                  <td>2828564726</td>
+                  <td>1210 E Joans rd, Tucson, AZ, 85122</td>
+                  <td>Time-of-Use 4pm-7pm Weekdays</td>
+                  <td>10/16/2022</td>
+                  <td>10/23/2022</td>
+                  <td>616</td>
+                  <td>142.99</td>
+                  <td><button>Download Bill</button></td>
+                </tr>
+                <tr>
+                  <td>2828564726</td>
+                  <td>1210 E Joans rd, Tucson, AZ, 85122</td>
+                  <td>Time-of-Use 4pm-7pm Weekdays</td>
+                  <td>9/16/2022</td>
+                  <td>9/23/2022</td>
+                  <td>426</td>
+                  <td>442.99</td>
+                  <td><button>Download Bill</button></td>
+                </tr>
+                <tr>
+                  <td>2828564726</td>
+                  <td>1210 E Joans rd, Tucson, AZ, 85122</td>
+                  <td>Time-of-Use 4pm-7pm Weekdays</td>
+                  <td>8/16/2022</td>
+                  <td>8/23/2022</td>
+                  <td>710</td>
+                  <td>420.99</td>
+                  <td><button>Download Bill</button></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="8" class="totalamount" style="color: white;">Total: $340</td>
+
+                </tr>
+              </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
   </section>
+
+  
+    
+
     
     <!-- footer begins -->
     <footer>
@@ -155,9 +385,6 @@
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="data.html">Stats</a></li>
             <li><a href="log.html">Login</a></li>
-            <li class="nav__item">
-              <button onclick="logout ()" id="logout"><i class="fa-solid fa-right-from-bracket"></i> <a href="#" class="nav__link" >Logout</a></button> 
-            </li>
           </ul>
         </nav>
       </div>
